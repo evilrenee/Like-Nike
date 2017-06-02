@@ -6,6 +6,8 @@ html{
 body {
   background-image: url("background.png");
   background-position: 0 500px;
+  background-repeat: no-repeat;
+  background-color: #0c0d10;
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -79,7 +81,7 @@ a:hover {
 
 .right_nav {
   position: relative;
-  bottom: 64px;
+  bottom: 65px;
   float: right;
   height: 50px;
   max-width: 450px;
@@ -176,9 +178,9 @@ a:hover {
   overflow: hidden;
   position: relative;
   bottom: 120px;
-  min-width: 1024px;
+  min-width: 1000px;
   height: 280px;
-  margin-left: 95px;
+  margin: 0;
   z-index: 5;
 }
 
@@ -187,7 +189,6 @@ a:hover {
   overflow: hidden;
   width: 27%;
   height: auto;
-  margin-right: 5%;
 }
 
 .block > img {
@@ -195,7 +196,6 @@ a:hover {
 }
 
 .block > a, h3 {
-  position: relative;
   margin: 0;
   letter-spacing: 1px;
   text-align: center;
@@ -212,10 +212,13 @@ h3:hover {
 
 .showcase_1 {
   padding-top: 69px;
+  margin-right: 5%;
+  margin-left: 4%;
 }
 
 .showcase_2 {
   padding-top: 28px;
+  margin-right: 5%;
 }
 
 .store_info {
@@ -308,4 +311,146 @@ a {
   font-size: 0.7rem;
   font-family: 'PT Sans', sans-serif;
   color: rgba(230, 230, 230, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .header, .header.transition1, .header.transition2, .header.transition3, .header.scrolled {
+    background-position: -400px 0;
+  }
+
+  .blank {
+    display: none;
+  }
+
+  .left_nav {
+    width: 100px;
+  }
+
+  .right_nav {
+    bottom: 0;
+    width: 90px;
+    margin: 0;
+  }
+
+  .media_icon {
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .menu {
+    position: relative;
+    height: 26px;
+    top: 15px;
+    background-image: url("images/icons/menu.png");
+    margin-left: 5px;
+  }
+
+  .cart2 {
+    position: relative;
+    right: 10px;
+    bottom: 50px;
+    background-image: url("images/icons/cart.png");
+  }
+
+  .search {
+    position: relative;
+    right: -45px;
+    bottom: 78px;
+    background-image: url("images/icons/search2.png")
+  }
+
+  .beeline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .logo {
+    position: relative;
+    bottom: 360px;
+    left: 25px;
+    margin: auto;
+    max-width: 200px;
+    height: auto;
+    z-index: 1;
+  }
+
+  .motto {
+    position: relative;
+    top: 330px;
+    left: 50px;
+    line-height: 20px;
+    font-size: 1.5rem;
+  }
+
+  .showcase {
+    overflow: hidden;
+    position: relative;
+    bottom: 250px;
+    max-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+    z-index: 1;
+  }
+
+  .block {
+    float: none;
+    overflow: hidden;
+    padding-left: 6%;
+    padding-right: 4%;
+    padding-bottom: 15px;
+    height: auto;
+  }
+
+  .block > img {
+    width: 99%;
+  }
+
+  .showcase_1, .showcase_2 {
+    padding-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .store_info {
+    position: relative;
+    bottom: 210px;
+    height: auto;
+    width: 100%;
+    z-index: 2;
+    border-top: 9px solid rgba(48, 39, 47, 0.9);
+    border-bottom: 9px solid rgba(48, 39, 47, 0.9);
+  }
+
+  .contact {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    float: left;
+    background-color: rgba(75, 65, 73, 0.90);
+  }
+
+  .store {
+    width: 100%;
+    height: 260px;
+    float: right;
+    background-color: rgba(75, 65, 73, 0.85);
+  }
+
+ .membership {
+   position: relative;
+   bottom: 150px;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+  #footer {
+    position: relative;
+    height: 200px;
+  }
+
 }
